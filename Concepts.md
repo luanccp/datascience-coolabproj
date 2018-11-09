@@ -1,5 +1,5 @@
-# datascience-proj
-Tests projects about machine learning using python, Jupiter and colab enviroment.
+# Conceitos de Machine learning
+
 
 Para tentar evitar o overfiting (atrelados aos dados de treino), utilizamos:
 
@@ -17,3 +17,10 @@ Dentre as varias formas, podemos realizar uma simples da seguinte forma:
   
 Variaveis dependente e independentes
 Km/l (Dep/indep)
+
+A = W*X + B
+
+A-> saída
+W-> peso
+X-> parâmentro
+B-> bias ou vies
