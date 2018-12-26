@@ -1,26 +1,24 @@
-# Conceitos de Machine learning
+# Machine Learning Concepts
+To avoid overfiting (linked to training data), we use:
+
+# Regularization L1
+throws information that is not important to 0, thus definitely excluding the coefficients.
+# Regularization L2
+makes it tend to zero, trying as little as possible. Always try to keep the value (ex: 0.00001)
 
 
-Para tentar evitar o overfiting (atrelados aos dados de treino), utilizamos:
+When we have several data with different scales, we perform a normalization.
+Like the varied forms, one can perform a simple as follows:
+- we take the lowest value
+- we got the biggest
+- and even a box of these data from 0 to 1
 
-# Regularização L1
-joga a informação que não é importante para 0, assim excluindo definitivamente os coeficientes.
-# Regularização L2
-faz que tende a zero, tentando o menor possivel. Sempre tenta manter o valor (ex: 0,00001)
+Dependent and independent variables
+Km / l (dep / indep)
 
+A = W * X + B
 
-Quando temos varios dados com diferentes escalas, realizamos uma normalização.
-Dentre as varias formas, podemos realizar uma simples da seguinte forma:
-  - pegamos o menor valor
-  - pegamos o maior
-  - e fizemos uma escala desses dados de 0 até 1
-  
-Variaveis dependente e independentes
-Km/l (Dep/indep)
-
-A = W*X + B
-
-A-> saída
-W-> peso
-X-> parâmentro
-B-> bias ou vies
+A-> exit
+W-> weight
+X-> parameter
+B-> bias or vies
