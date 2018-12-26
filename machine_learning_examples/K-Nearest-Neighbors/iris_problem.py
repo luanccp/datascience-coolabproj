@@ -3,6 +3,7 @@
 Created on Wed Nov  7 11:19:57 2018
 
 @author: Luan
+@description: In this problem, we analyzing and can find overfit and underfit models
 """
 
 from sklearn.datasets import load_iris
@@ -10,29 +11,30 @@ from pandas.plotting import scatter_matrix
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#para dividir os dados entre teste e treino
+#to split the data
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
+#load iris dataset
 dados_iris = load_iris()
 
-# Função que retorna os valores
+# Function that returns results about the models
 def retornaResultadosModeloKNN(random_state, quantidade, dados, respostas):
     X_train, X_test, y_train, y_test = train_test_split(dados, respostas, random_state = random_state)
-    #vetores de armazenamento dos resultados de testes e dos treinos
     quantidade_k = range(1, quantidade + 1)
+    #restults storage vector
     res_teste = []
     res_treino = []
-    
-    #loop das classificações
+
+    #Classifier
     for i in quantidade_k:
         knn = KNeighborsClassifier(n_neighbors = i)
         knn.fit(X_train, y_train)
-        
-        #colocando os resultados nos vetores
+
+        #save the results
         res_treino.append(knn.score(X_train, y_train))
         res_teste.append(knn.score(X_test, y_test))
-    
+
     return quantidade_k, res_treino, res_teste
 
 
@@ -41,11 +43,13 @@ i=5
 
 
 
-# Plotagem dos graficos com os seguintes randoms 1, 5, 20, 550
+# plotting resutls
 dados = dados_iris['data']
 respostas = dados_iris['target']
 
-plt.rcParams["figure.figsize"] = [12,12]
+plt.rcParams["figure.figsize"] = [15,7]
+
+
 # RAND 1
 legendas = ["Treino", "Teste"]
 quantidade = 20
