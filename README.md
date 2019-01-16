@@ -16,9 +16,15 @@ In this folder, I show how to use some functionalities that helped me to create 
 
 ### Data analysis ( :open_file_folder: data_analysis)
 When I think about Data analysis, I immediately think about processes/subprocesses like: a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, inferring conclusions and supporting decision-making.
+
 #### Titanic Analysis
+The Titanic analysis is a classic application to transform all these data in some information. In my algorithm, I check the relation about the type of cabin and age of passengers.
+First of all, I fitted the date replacing my null values for the average of ages. Second I checked my data and results with a seaborn chart. Third I checked the relation between the sector embarked and if the passenger survived. Besides that, I did some analysis for the passengers by age, if they were responsible for someone and the fare.
+Finally, I did a linear regression to the age and a possibility that the passenger survived.
+
 
 ### Machine Learning ( :open_file_folder: machine_learning_examples)
+
 #### K-Nearest-Neighbors
 #### Linear regression
 #### Natural language processing (NLP)
