@@ -24,8 +24,20 @@ Finally, I did a linear regression to the age and a possibility that the passeng
 
 
 ### Machine Learning ( :open_file_folder: machine_learning_examples)
+On this section, I applicated some machine learning techniques trying to make some predictions or decision based on data sets.
 
 #### K-Nearest-Neighbors
+In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method used for classification and regression. This algorithm is among the simplest of all machine learning algorithms. It’s a useful technique can be used to assign weight to the contributions of the neighbors, so that the nearer neighbors contribute more to the average than the more distant ones. For example, a common weighting scheme consists in giving each neighbor a weight of 1/d, where d is the distance to the neighbor.
+##### Iris problem
+I created a solution for the classic Iris problem. Based on the Iris characteristics I applicated the KNN algorithm to classification what species of Iris I was trying to predict. So if I have data about the Iris I can tell what species it is.
+
+#### K-Nearest-Clustering
+Sometimes you maybe confuse k-nearest neighbors with k-nearest clustering. But the K-nearest clustering is popular for cluster analysis in data mining. k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.
+##### Image filter by color
+I really liked to create this solution because when I had a visual result become more exciting. This solution is about a filter image colors, I separated by three colors: yellow, green and blue. Before the algorithm application, I play with some functions from cv2 library to edit the main image exploring the processing image.
+First of all, I created a function that separated what are the main colors present in an image. I worked to hexadecimal and RGB values, so I had to create a function to convert these values. After that, I mapped what files were an image on a specific folder. Finally, I created a function that matches these images by colors (previously defined YGB). If the image matches with any color I put there.
+
+
 #### Linear regression
 #### Natural language processing (NLP)
 #### Principal Component Analysis (PCA)
