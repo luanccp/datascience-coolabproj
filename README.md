@@ -39,7 +39,16 @@ First of all, I created a function that separated what are the main colors prese
 
 
 #### Linear regression
+It is a approach to modeling the relationship between a scalar response (or dependent variable) and one or more explanatory variables (or independent variables).
+I developed a simple Python code with random data, to create a linear regression with Scikit Learn 
+
 #### Natural language processing (NLP)
+This role is, for me, the closest distance between computer languages and humans languages. The big challenges are generated and comprehension humans communication.
+##### Spam classification
+I took an old problem, spam messages. In this project, I had to work with the Natural Language Tool Kit (NLTK). I had a data set with many massages classified as SPAM or HAM.
+First of all, I did data analysis and I realized that the messages format were a problem. The messages had punctuation and maybe cause some noise to the results. So I remove that punctuation. After that, I use stopword from NLTK, and remove then to the meaning easier to get. I separated all words and count, and analysis how many times this word show up on a SPAM/HAM massage. I used Naive Bayes to classify and do predictions.
+##### Review Classification
+
 #### Principal Component Analysis (PCA)
 #### Support Vector Machines
 #### Neural Network
