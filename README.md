@@ -46,9 +46,19 @@ I developed a simple Python code with random data, to create a linear regression
 This role is, for me, the closest distance between computer languages and humans languages. The big challenges are generated and comprehension humans communication.
 ##### Spam classification
 I took an old problem, spam messages. In this project, I had to work with the Natural Language Tool Kit (NLTK). I had a data set with many massages classified as SPAM or HAM.
-First of all, I did data analysis and I realized that the messages format were a problem. The messages had punctuation and maybe cause some noise to the results. So I remove that punctuation. After that, I use stopword from NLTK, and remove then to the meaning easier to get. I separated all words and count, and analysis how many times this word show up on a SPAM/HAM massage. I used Naive Bayes to classify and do predictions.
+First of all, I did data analysis and I realized that the messages format were a problem. The messages had punctuation and maybe cause some noise to the results. So I remove that punctuation. After that, I use stopword from NLTK, and remove then to the meaning easier to get. I separated all words and count, and I analyzed how many times this word show up on a SPAM/HAM massage. I used Naive Bayes to classify and do predictions.
 ##### Review Classification
+In this analysis, I get a dataset with reviews (0 to 5). I started removed all reviews with 0. Second I separated all reviews by description length and star review. I got the text and star data to work with. Soon after, I used naive baive to make some predictions.
+I used TfidfTransformer to correlate the most written words and reviews. The results were placed in a confusion matrix.
 
 #### Principal Component Analysis (PCA)
+Is the most used tool in exploratory data analysis and for making predictive models. It is often used to visualize genetic distance and relatedness between populations.
+On this mini project, I analyzed the dataset about breast cancer, and I did some correlations.
+
 #### Support Vector Machines
+In this training algorithm, it’s possible builds a model making it a non-probabilistic binary linear classifier. I compared a confuse matrix before and after the SVC, and I could see the improvement.
+
 #### Neural Network
+A multilayer perceptron (MLP) is a class of artificial neural network that consists of, at least, three layers of nodes: an input layer, a hidden layer, and an output layer. This class utilizes a supervised learning technique called backpropagation for training. 
+I wrote a python program that applied the MLP to the breast cancer problem. In the end, I am able to predict through the data if it is or is not cancer.
+
