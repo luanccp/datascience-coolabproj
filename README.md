@@ -1,6 +1,6 @@
 # Luan Castheloge's portifolio
 Hi, I am a computer engineering graduated by Universidade Federal do Espirito Santo (UFES) at Brazil.
-Data is everything nowadays and transform then in information make me exciting!
+Data is everything nowadays and transform then in information is exciting!
 I started to study data science in June 2017 and this repository is to help anyone else that wants to understand this huge and amazing role.  
 So let’s explore!
 
